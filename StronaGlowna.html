@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <div id="images">
+            <div class="imag" id="i1">Londyn<img src="images/Londyn.png" alt="Zdjęcie Londynu"></div>
+            <div class="imag" id="i2">Birmingham<img src="images/Birmingham.jpg" alt="Zdjęcie Birmingham"></div>
+            <div class="imag" id="i3">Leeds<img src="images/Leeds.jpg" alt="Zdjęcie Leeds"></div>
+            <div class="imag" id="i4">Glasgow<img src="images/Glasgow.jpg" alt="Zdjęcie Glasgow"></div>
+            <div class="imag" id="i5">Sheffield<img src="images/Sheffield.png" alt="Zdjęcie Sheffield"></div>
+            <div class="imag" id="i6">Manchester<img src="images/Manchester.jpg" alt="Zdjęcie Manchesteru"></div>
+            <div class="imag" id="i7">Edynburg<img src="images/Edinburgh.jpg" alt="Zdjęcie Edynburga"></div>
+        </div>
+    </div>
+    <br><br>
+    <span class="subtitle" id="formularz">Formularz dotyczący strony:</span><br>
+    <form id="form" action="mailto:maciejszymaniak16@gmail.com" method="post">
+        <label for=imie>Imię: </label>
+        <input type=text name=imie id=imie maxlength=15> <br>
+        <label for=nazwisko>Nazwisko: </label>
+        <input type="text" name="nazwisko" id="nazwisko" maxlength=15> <br><br>
+        Czy podoba Ci się ta strona internetowa?<br>
+        <input type="radio" id="tak" name="opinia" value="tak">
+        <label for="tak">Tak</label> <br>
+
+        <input type="radio" id="nie" name="opinia" value="nie">
+        <label for="nie">Nie</label> <br><br>
+
+        Które miasto byś odwiedził/ła?<br>
+        <input type=checkbox id="Londyn" name="miasta" value="Londyn">
+            <label for="Londyn">Londyn</label> <br>
+            <input type=checkbox id="Birmingham" name="miasta" value="Birmingham">
+            <label for="Birmingham">Birmingham</label> <br>
+            <input type=checkbox id="Leeds" name="miasta" value="Leeds">
+            <label for="Leeds">Leeds</label> <br>
+            <input type=checkbox id="Glasgow" name="miasta" value="Glasgow">
+            <label for="Glasgow">Glasgow</label> <br>
+            <input type=checkbox id="Sheffield" name="miasta" value="Sheffield">
+            <label for="Sheffield">Sheffield</label> <br>
+            <input type=checkbox id="Manchester" name="miasta" value="Manchester">
+            <label for="Manchester">Manchester</label> <br>
+            <input type=checkbox id="Edynburg" name="miasta" value="Edynburg">
+            <label for="Edynburg">Edynburg</label> <br>
+            
+            
+            <br><br>
+        <label for="uwagi">Co byś zmienił/zmieniła? </label> <br>
+        <textarea name=uwagi id=uwagi cols="20" rows="7" maxlength="100" >Napisz tu swoje uwagi...</textarea>
+        <br><br>
+        <input type="reset" value="Wyczyść"> &nbsp;<br>
+        <input type="submit" value="Wyślij"><br><br><br>
+    </form>
+</body>
+</html>
